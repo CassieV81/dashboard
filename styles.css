@@ -22,7 +22,7 @@ body {
   background-color: white;
   box-shadow: 2px 3px 5px #888888;
   grid-area: 1 / 2 / 2 / 5;
-  padding: 0 20px;
+  padding: 10px 20px;
   z-index: 1;
 }
 .header1 {
@@ -64,7 +64,7 @@ button {
 button:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  transform: scale(1.1);
 }
 .profile {
   display: grid;
@@ -121,6 +121,7 @@ h5, h2 {
 .mainNavs {
   display: grid;
   gap: 20px;
+  height: fit-content;
   padding: 10px;
 }
 .mainNavs div {
@@ -129,6 +130,11 @@ h5, h2 {
   align-items: center;
   width: fit-content;
   gap: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.mainNavs div:hover {
+  transform: scale(1.2);
 }
 .altNav {
   display: grid;
@@ -142,6 +148,11 @@ h5, h2 {
   align-items: center;
   width: fit-content;
   gap: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.altNav div:hover {
+  transform: scale(1.2);
 }
 
 .profilePic {
@@ -164,4 +175,14 @@ img {
 .headerIcon {
   width: 1em;
   filter: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.headerIcon:hover {
+  transform: scale(1.2);
+}
+.profilePic:hover, .profilePic2:hover, h5:hover {
+  transition: .3s;
+  cursor: pointer;
+  transform: scale(1.1);
 }
