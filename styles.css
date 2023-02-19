@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template: auto 3fr / auto 3fr ;
@@ -145,13 +144,13 @@ h5, h2 {
   transform: scale(1.2);
 }
 
-.profilePic {
+.profilePic, .profile img  {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   filter: none;
 }
-.profilePic2 {
+.profilePic2{
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -185,14 +184,16 @@ img {
   grid-template: 1fr 1fr / 2fr 1fr;
   gap: 15px;
 }
-div:has(> .projectCard, .announcementCard, .trendingCard) {
-  /* border: 2px solid red; */
+
+.cards {
+  grid-area: 1 / 1 / 3 / 2;
 }
+
 div:has(> .projectCard) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  margin-top: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 8px;
 }
 
 div:has(> .announcementCard) {
@@ -204,7 +205,6 @@ div:has(> .trendingCard) {
 }
 
 .projectCard {
-  /* width: fit-content; */
   padding: 15px;
   background-color: white;
   display: flex;
@@ -221,20 +221,39 @@ div:has(> .trendingCard) {
 }
 .projectCard h6, .announcementCard h6 {
   margin: 0;
+  font-size: .8rem;
 }
 hr {
-  margin: 20px 0;
+  margin: 10px 0;
   width: 100%;
 }
 p {
-  font-size: .7rem;
+  font-size: .8rem;
   margin: 5px 0;
 }
 
 .announcementCard {
-  padding: 20px;
+  padding: 15px;
   background-color: white;
   flex-direction: column;
   border-radius: 5px;
+  margin-top: 8px;
+}
+.announcementCard p, .announcementCard h6 {
+  font-size: .7rem;
+}
+
+.trendingCard {
+  padding: 15px;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.trendingCard .profile {
+  gap: 10px;
   margin-top: 5px;
+}
+.trendingCard p {
+  font-size: .7rem;
 }
