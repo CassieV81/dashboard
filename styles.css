@@ -15,7 +15,8 @@ body {
 .header {
   background-color: white;
   box-shadow: 2px 3px 5px #888888;
-  grid-area: 1 / 2 / 2 / 5;
+  /* removing the grid area below makes it a bit more responsive in mobile(it streches out the width) */
+  /* grid-area: 1 / 2 / 2 / 5;  */
   padding: 10px 20px;
   z-index: 1;
 }
