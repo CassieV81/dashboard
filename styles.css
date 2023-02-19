@@ -1,8 +1,8 @@
 
 :root {
-  --primary-color: rgb(166, 202, 243);
-  --secondary-color: rgb(228, 226, 226);
-  --text-color: black;
+  --primary-color: rgb(64, 90, 48);
+  --secondary-color: rgb(226, 228, 226);
+  --text-color: white
 }
 
 body {
@@ -160,11 +160,11 @@ h5, h2 {
 
 img {
   width: 1em;
-  /* filter: brightness(0) invert(1); */
+  filter: brightness(0) invert(1);
 }
 .headerIcon, .cardIcons img {
   width: 1em;
-  /* filter: none; */
+  filter: none;
   cursor: pointer;
   transition: .3s;
 }
