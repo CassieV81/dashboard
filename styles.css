@@ -217,12 +217,24 @@ div:has(> .trendingCard) {
   margin-left: auto;
   margin-top: auto;
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
-.projectCard h6 {
+.projectCard h6, .announcementCard h6 {
   margin: 0;
+}
+hr {
+  margin: 20px 0;
+  width: 100%;
 }
 p {
   font-size: .7rem;
   margin: 5px 0;
+}
+
+.announcementCard {
+  padding: 20px;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 5px;
 }
